@@ -1,37 +1,37 @@
 /* 
-  Based on Cassidy’s CSS tweaks for mastodon.blaede.family (https://gist.github.com/cassidyjames/292c1e3062ad5248284999e4c7841a17)
-  Inspired in part by TangerineUI:
-  https://github.com/nileane/TangerineUI-for-Mastodon/
-  …but much smaller in scope.
+  Elmer for Mastodon. v0.0.1. 
 
-  Simplified-to-only-keep-color styles by @eramdam@erambert.me.
-  Provided as-is, works fine as far as I can tell as of 2026-07-25 on Mastodon 4.6.2.
+  A colorful Mastodon theme
+  https://github.com/eramdam/elmer-for-mastodon.
 */
 
-/* MAIN ACCENT COLORS.
-   Red at the moment because that's what I like but obviously, make it your own.
-*/
+/* Default colors (Mastodon default brand colors) */
 
 :root {
-  /* --color-accent-base: hsl(346 82% 41%); */
-  --color-accent-base: hsl(336, 61%, 55%);
-  --color-accent: var(--color-accent-base);
+  --color-accent-base: var(--color-indigo-600);
 }
 
 [data-color-scheme="dark"] {
-  /* It's not strictly necessary to set up a dark-specific color but it usually yields better results.  */
-  /* --color-accent: hsl(346 65% 55%); */
-  /* You can use relative color syntax for that stuff. */
-  /* --color-accent: hsl(from var(--color-accent-base) calc(h + 10) calc(s + 4) l); */
-  --color-accent: hsl(336, 55%, 59%);
+  --color-accent-base: var(--color-indigo-700);
 }
 
+/**
+ * Custom accent color.
+ */
+
 :root {
-  --version: "2.0.7";
+  --color-accent-base: hsl(336, 61%, 55%);
+}
+
+[data-color-scheme="dark"] {
+  --color-accent-base: hsl(336, 55%, 59%);
+}
+
+/** Rest of the theme. */
+
+:root {
+  --version: "0.0.1";
   --bg: white;
-  /* Avatar size/gap stuff if you want. I'm fine with the defaults. */
-  /* --avatar-size: 46px; */
-  /* --avatar-gap: 10px; */
 
   --avatar-border-radius: 999px;
   --color-bg-primary: var(--bg);
@@ -56,8 +56,6 @@
 [data-color-scheme="dark"] {
   --bg: black;
 
-  /* Cassidy's default bg-primary color. */
-  /* --color-bg-primary: color-mix(in oklab, var(--bg), var(--color-accent) 33%); */
   --color-bg-primary: color-mix(in oklab, var(--bg), var(--color-accent) 20%);
   --color-border-primary: color-mix(in oklab, var(--color-text-brand), var(--color-bg-primary) 75%);
   --color-border-media: rgba(255, 255, 255, .15);

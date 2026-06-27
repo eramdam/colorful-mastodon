@@ -1,24 +1,10 @@
 <h1>Elmer for Mastodon <img src="./meta/elmer.png" width="30" style="vertical-align:middle;" /></h1>
 
-Named after [Elmer the Patchwork Elephant](https://en.wikipedia.org/wiki/Elmer_the_Patchwork_Elephant).
+<small>Named after [Elmer the Patchwork Elephant](https://en.wikipedia.org/wiki/Elmer_the_Patchwork_Elephant).</small>
 
 Elmer is a custom theme for Mastodon 4.6+ that leverages the [Mastodon design system](https://docs.joinmastodon.org/dev/frontend/design-tokens/) to easily achieve a colorful look based on only one or two base accent colors.
 
 # Examples
-
-<details>
-<summary>"Cherry" red theme</summary>
-
-![](meta/cherry-light.png) ![](meta/cherry-dark.png)
-
-</details>
-
-<details>
-<summary>Indigo theme</summary>
-
-![](meta/indigo-light.png) ![](meta/indigo-dark.png)
-
-</details>
 
 ## Inspirations
 
