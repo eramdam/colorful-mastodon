@@ -1,12 +1,12 @@
 /* 
-  Elmer for Mastodon. v0.0.2. 
+  Elmer for Mastodon. v0.0.3. 
 
   A colorful Mastodon theme
   https://github.com/eramdam/elmer-for-mastodon.
 */
 
 :root {
-  --version: "0.0.2";
+  --version: "0.0.3";
   --color-accent: var(--color-accent-base);
 
   --bg: white;
@@ -14,7 +14,7 @@
   --color-bg-primary: color-mix(in oklab, var(--bg), var(--color-accent) 5%);
   --color-bg-secondary: color-mix(in oklab, var(--color-bg-primary), var(--color-accent) 10%);
   --color-bg-tertiary: color-mix(in oklab, var(--color-bg-primary), var(--color-accent) 5%);
-  --color-bg-brand-soft: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 33%);
+  --color-bg-brand-soft: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 80%);
   --color-bg-brand-softest: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 85%);
   --color-bg-brand-base: var(--color-accent);
   --color-bg-brand-base-hover: color-mix(in oklab, var(--color-bg-brand-base), black 20%);
