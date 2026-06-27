@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "lightningcss --bundle themes/elmer-* -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "lightningcss": "^1.32.0"
+    "lightningcss-cli": "^1.32.0"
   }
 }

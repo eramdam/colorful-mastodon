@@ -1,4 +1,4 @@
-@import url('./elmer-base.css');
+@import url('./_elmer-base.css');
 
 :root {
   --color-accent-base: hsl(336, 61%, 55%);

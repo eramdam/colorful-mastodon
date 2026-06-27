@@ -1,4 +1,4 @@
-@import url('./elmer-base.css');
+@import url('./_elmer-base.css');
 
 /* Default colors (Mastodon default brand colors). */
 :root {
