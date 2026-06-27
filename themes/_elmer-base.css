@@ -28,6 +28,7 @@
   --color-text-brand: var(--color-accent);
   --color-text-brand-on-inverted: var(--color-accent);
   --color-text-disabled: hsl(from var(--color-accent) h 20 l);
+  --color-border-success-soft: color-mix(in oklab, var(--color-bg-success-soft), var(--color-accent) 20%);
 }
 
 [data-color-scheme="dark"] {
