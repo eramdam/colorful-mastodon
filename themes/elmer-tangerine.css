@@ -1,0 +1,9 @@
+@import url('./_elmer-base.css');
+
+:root {
+  --color-accent-base: hsl(25deg 98% 49%);
+}
+
+[data-color-scheme="dark"] {
+  --color-accent-base: hsl(25deg 98% 49%);
+}

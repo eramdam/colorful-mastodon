@@ -1,14 +1,6 @@
-/* 
-  Elmer for Mastodon. v0.0.2. 
-
-  A colorful Mastodon theme
-  https://github.com/eramdam/elmer-for-mastodon.
-*/
-
 :root {
   --version: "0.0.2";
   --color-accent: var(--color-accent-base);
-
   --bg: white;
   --avatar-border-radius: 999px;
   --color-bg-primary: color-mix(in oklab, var(--bg), var(--color-accent) 5%);
@@ -19,7 +11,7 @@
   --color-bg-brand-base: var(--color-accent);
   --color-bg-brand-base-hover: color-mix(in oklab, var(--color-bg-brand-base), black 20%);
   --color-border-primary: color-mix(in oklab, var(--color-text-brand), var(--color-bg-primary) 60%);
-  --color-border-media: rgba(0, 0, 0, .15);
+  --color-border-media: #00000026;
   --color-border-brand: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 50%);
   --color-border-brand-soft: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 75%);
   --color-text-secondary: color-mix(in oklab, var(--color-text-primary), var(--color-bg-primary));
@@ -33,75 +25,43 @@
 [data-color-scheme="dark"] {
   --bg: black;
   --color-accent: hsl(from var(--color-accent-base) calc(h + 10) calc(s + 4) l);
-
   --color-bg-primary: color-mix(in oklab, var(--bg), var(--color-accent) 20%);
   --color-border-primary: color-mix(in oklab, var(--color-text-brand), var(--color-bg-primary) 75%);
-  --color-border-media: rgba(255, 255, 255, .15);
+  --color-border-media: #ffffff26;
   --color-text-brand: color-mix(in oklab, var(--color-accent), white 30%);
 }
 
-
-@media screen and (max-width: 1174px) {
+@media screen and (width <= 1174px) {
   .columns-area__panels__pane--navigational .navigation-panel {
     border-inline-end: 1px solid var(--color-border-primary);
     border-inline-start: none;
   }
 }
 
-.drawer__inner__mastodon.with-zig-zag-decoration img {
+.drawer__inner__mastodon.with-zig-zag-decoration img, .app-body .column-link.column-link--logo, .app-body .ui__header__logo, .app-body .column-link.column-link--logo svg, .app-body .ui__header__logo svg {
   display: none;
 }
-
-/* LOGO */
-
-.app-body .column-link.column-link--logo,
-.app-body .ui__header__logo {
-  display: none;
-}
-
-.app-body .column-link.column-link--logo svg,
-.app-body .ui__header__logo svg {
-  display: none;
-}
-
-/* STATUSES */
 
 .icon-button {
   --default-icon-color: color-mix(in oklab, var(--color-text-primary), var(--color-bg-primary) 67%);
 }
 
-/* BORDER RADIUS */
-
-.status-card,
-.compose-form__highlightable,
-.media-gallery,
-.media-gallery__item,
-.video-player {
+.status-card, .compose-form__highlightable, .media-gallery, .media-gallery__item, .video-player {
   border-radius: 1em;
 }
 
-.content-warning,
-.search__input,
-.navigation-panel__compose-button,
-.search__popout,
-.privacy-dropdown__dropdown,
-.language-dropdown__dropdown,
-.visibility-dropdown__dropdown {
-  border-radius: 0.5em;
+.content-warning, .search__input, .navigation-panel__compose-button, .search__popout, .privacy-dropdown__dropdown, .language-dropdown__dropdown, .visibility-dropdown__dropdown {
+  border-radius: .5em;
 }
 
 .search__popout {
   box-shadow: none;
 }
 
-.btn,
-.simple_form .btn,
-.button,
-.button--compact,
-.icon-button,
-.hashtag-bar a,
-.hashtag-header__header__buttons .icon-button,
-._comp_account_header__buttonsDesktop .icon-button,
-._comp_account_header__buttonsMobile .icon-button {
+.btn, .simple_form .btn, .button, .button--compact, .icon-button, .hashtag-bar a, .hashtag-header__header__buttons .icon-button, ._comp_account_header__buttonsDesktop .icon-button, ._comp_account_header__buttonsMobile .icon-button {
   border-radius: 999px !important;
+}
+
+:root, [data-color-scheme="dark"] {
+  --color-accent-base: #f76902;
 }
