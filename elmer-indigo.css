@@ -1,0 +1,10 @@
+@import url('./elmer-base.css');
+
+/* Default colors (Mastodon default brand colors). */
+:root {
+  --color-accent-base: var(--color-indigo-600);
+}
+
+[data-color-scheme="dark"] {
+  --color-accent-base: var(--color-indigo-700);
+}

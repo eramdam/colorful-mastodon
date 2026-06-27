@@ -5,30 +5,6 @@
   https://github.com/eramdam/elmer-for-mastodon.
 */
 
-/* Default colors (Mastodon default brand colors) */
-
-:root {
-  --color-accent-base: var(--color-indigo-600);
-}
-
-[data-color-scheme="dark"] {
-  --color-accent-base: var(--color-indigo-700);
-}
-
-/**
- * Custom accent color.
- */
-
-:root {
-  --color-accent-base: hsl(336, 61%, 55%);
-}
-
-[data-color-scheme="dark"] {
-  --color-accent-base: hsl(336, 55%, 59%);
-}
-
-/** Rest of the theme. */
-
 :root {
   --version: "0.0.1";
   --bg: white;
