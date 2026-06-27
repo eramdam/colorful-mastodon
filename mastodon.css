@@ -1,0 +1,131 @@
+/* 
+  Based on Cassidy’s CSS tweaks for mastodon.blaede.family (https://gist.github.com/cassidyjames/292c1e3062ad5248284999e4c7841a17)
+  Inspired in part by TangerineUI:
+  https://github.com/nileane/TangerineUI-for-Mastodon/
+  …but much smaller in scope.
+
+  Simplified-to-only-keep-color styles by @eramdam@erambert.me.
+  Provided as-is, works fine as far as I can tell as of 2026-07-25 on Mastodon 4.6.2.
+*/
+
+/* MAIN ACCENT COLORS.
+   Red at the moment because that's what I like but obviously, make it your own.
+*/
+
+:root {
+  /* --color-accent-base: hsl(346 82% 41%); */
+  --color-accent-base: hsl(336, 61%, 55%);
+  --color-accent: var(--color-accent-base);
+}
+
+[data-color-scheme="dark"] {
+  /* It's not strictly necessary to set up a dark-specific color but it usually yields better results.  */
+  /* --color-accent: hsl(346 65% 55%); */
+  /* You can use relative color syntax for that stuff. */
+  /* --color-accent: hsl(from var(--color-accent-base) calc(h + 10) calc(s + 4) l); */
+  --color-accent: hsl(336, 55%, 59%);
+}
+
+:root {
+  --version: "2.0.7";
+  --bg: white;
+  /* Avatar size/gap stuff if you want. I'm fine with the defaults. */
+  /* --avatar-size: 46px; */
+  /* --avatar-gap: 10px; */
+
+  --avatar-border-radius: 999px;
+  --color-bg-primary: var(--bg);
+  --color-bg-secondary: color-mix(in oklab, var(--color-bg-primary), var(--color-accent) 10%);
+  --color-bg-tertiary: color-mix(in oklab, var(--color-bg-primary), var(--color-accent) 5%);
+  --color-bg-brand-soft: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 33%);
+  --color-bg-brand-softest: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 85%);
+  --color-bg-brand-base: var(--color-accent);
+  --color-bg-brand-base-hover: color-mix(in oklab, var(--color-bg-brand-base), black 20%);
+  --color-border-primary: color-mix(in oklab, var(--color-text-brand), var(--color-bg-primary) 60%);
+  --color-border-media: rgba(0, 0, 0, .15);
+  --color-lines-translucent: rgba(0, 0, 0, .15);
+  --color-border-brand: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 50%);
+  --color-border-brand-soft: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 75%);
+  --color-text-secondary: color-mix(in oklab, var(--color-text-primary), var(--color-bg-primary));
+  --color-text-tertiary: color-mix(in oklab, var(--color-text-primary), var(--color-bg-primary) 60%);
+  --color-text-brand: var(--color-accent);
+  --color-text-brand-on-inverted: var(--color-accent);
+  --color-text-disabled: hsl(from var(--color-accent) h 20 l);
+}
+
+[data-color-scheme="dark"] {
+  --bg: black;
+
+  /* Cassidy's default bg-primary color. */
+  /* --color-bg-primary: color-mix(in oklab, var(--bg), var(--color-accent) 33%); */
+  --color-bg-primary: color-mix(in oklab, var(--bg), var(--color-accent) 20%);
+  --color-border-primary: color-mix(in oklab, var(--color-text-brand), var(--color-bg-primary) 75%);
+  --color-border-media: rgba(255, 255, 255, .15);
+  --color-text-brand: color-mix(in oklab, var(--color-accent), white 30%);
+}
+
+
+@media screen and (max-width: 1174px) {
+  .columns-area__panels__pane--navigational .navigation-panel {
+    border-inline-end: 1px solid var(--color-border-primary);
+    border-inline-start: none;
+  }
+}
+
+.drawer__inner__mastodon.with-zig-zag-decoration img {
+  display: none;
+}
+
+/* LOGO */
+
+.app-body .column-link.column-link--logo,
+.app-body .ui__header__logo {
+  display: none;
+}
+
+.app-body .column-link.column-link--logo svg,
+.app-body .ui__header__logo svg {
+  display: none;
+}
+
+/* STATUSES */
+
+.icon-button {
+  --default-icon-color: color-mix(in oklab, var(--color-text-primary), var(--color-bg-primary) 67%);
+}
+
+/* BORDER RADIUS */
+
+.status-card,
+.compose-form__highlightable,
+.media-gallery,
+.media-gallery__item,
+.video-player {
+  border-radius: 1em;
+}
+
+.content-warning,
+.search__input,
+.navigation-panel__compose-button,
+.search__popout,
+.privacy-dropdown__dropdown,
+.language-dropdown__dropdown,
+.visibility-dropdown__dropdown {
+  border-radius: 0.5em;
+}
+
+.search__popout {
+  box-shadow: none;
+}
+
+.btn,
+.simple_form .btn,
+.button,
+.button--compact,
+.icon-button,
+.hashtag-bar a,
+.hashtag-header__header__buttons .icon-button,
+._comp_account_header__buttonsDesktop .icon-button,
+._comp_account_header__buttonsMobile .icon-button {
+  border-radius: 999px !important;
+}
