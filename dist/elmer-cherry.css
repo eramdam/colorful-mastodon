@@ -10,6 +10,7 @@
   --color-bg-brand-softest: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 85%);
   --color-bg-brand-base: var(--color-accent);
   --color-bg-brand-base-hover: color-mix(in oklab, var(--color-bg-brand-base), black 20%);
+  --color-bg-success-softest: var(--color-bg-secondary);
   --color-border-primary: color-mix(in oklab, var(--color-text-brand), var(--color-bg-primary) 60%);
   --color-border-media: #00000026;
   --color-border-brand: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 50%);
@@ -19,7 +20,6 @@
   --color-text-brand: var(--color-accent);
   --color-text-brand-on-inverted: var(--color-accent);
   --color-text-disabled: hsl(from var(--color-accent) h 20 l);
-  --color-bg-success-softest: var(--color-bg-secondary);
   --color-border-success-soft: var(--color-border-brand);
 }
 
