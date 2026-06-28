@@ -3,7 +3,7 @@
   --color-accent: var(--color-accent-base);
   --bg: white;
   --avatar-border-radius: 999px;
-  --color-bg-primary: color-mix(in oklab, var(--bg), var(--color-accent) 5%);
+  --color-bg-primary: color-mix(in oklab, var(--bg), var(--color-accent) 3.5%);
   --color-bg-secondary: color-mix(in oklab, var(--color-bg-primary), var(--color-accent) 10%);
   --color-bg-tertiary: color-mix(in oklab, var(--color-bg-primary), var(--color-accent) 5%);
   --color-bg-brand-soft: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 80%);
