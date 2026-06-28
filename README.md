@@ -8,6 +8,26 @@ Elmer is a custom theme for Mastodon 4.6+ that leverages the [Mastodon design sy
 
 Based on [Cassidy’s CSS tweaks for mastodon.blaede.family](https://gist.github.com/cassidyjames/292c1e3062ad5248284999e4c7841a17), which itself was inspired by @nileane's [TangerineUI](https://github.com/nileane/TangerineUI-for-Mastodon).
 
+## Variants
+
+### Indigo
+
+[CSS file](./dist/elmer-indigo.css)
+
+![](./meta/indigo.png)
+
+### Cherry
+
+[CSS file](./dist/elmer-cherry.css)
+
+![](./meta/cherry.png)
+
+### Tangerine
+
+[CSS file](./dist/elmer-tangerine.css)
+
+![](./meta/tangerine.png)
+
 ## Installation and disclaimer
 
 Extremely early, therefore the installation steps are "if you know how to apply this, go ahead" until this thing stabilizes more.
