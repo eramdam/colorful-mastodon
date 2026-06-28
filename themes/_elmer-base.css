@@ -92,6 +92,7 @@
 
 .search__popout {
   box-shadow: none;
+  margin-block-start: .5em;
 }
 
 .btn,
