@@ -56,6 +56,7 @@
 
 .search__popout {
   box-shadow: none;
+  margin-block-start: .5em;
 }
 
 .btn, .simple_form .btn, .button, .button--compact, .icon-button, .hashtag-bar a, .hashtag-header__header__buttons .icon-button, ._comp_account_header__buttonsDesktop .icon-button, ._comp_account_header__buttonsMobile .icon-button {
