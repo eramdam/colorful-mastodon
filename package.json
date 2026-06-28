@@ -1,16 +1,17 @@
 {
-  "name": "meta",
-  "version": "1.0.0",
+  "name": "Elmer for Mastodon",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "lightningcss --bundle themes/elmer-* -d dist"
+    "build": "node build.mts"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
-    "lightningcss-cli": "^1.32.0"
+    "@types/node": "^24.13.2",
+    "lightningcss": "^1.32.0",
+    "typescript": "^6.0.3"
   }
 }
