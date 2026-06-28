@@ -14,7 +14,7 @@
   --color-border-media: #00000026;
   --color-border-brand: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 50%);
   --color-border-brand-soft: color-mix(in oklab, var(--color-accent), var(--color-bg-primary) 75%);
-  --color-text-secondary: color-mix(in oklab, var(--color-text-primary), var(--color-bg-primary));
+  --color-text-secondary: color-mix(in oklab, var(--color-text-primary), var(--color-bg-primary) 45%);
   --color-text-tertiary: color-mix(in oklab, var(--color-text-primary), var(--color-bg-primary) 60%);
   --color-text-brand: var(--color-accent);
   --color-text-brand-on-inverted: var(--color-accent);
