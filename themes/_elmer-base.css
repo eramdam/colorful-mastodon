@@ -34,7 +34,7 @@
   --bg: black;
   --color-accent: hsl(from var(--color-accent-base) calc(h + 10) calc(s + 4) l);
 
-  --color-bg-primary: color-mix(in oklab, var(--bg), var(--color-accent) 20%);
+  --color-bg-primary: color-mix(in oklab, var(--bg), var(--color-accent) 24%);
   --color-border-primary: color-mix(in oklab, var(--color-text-brand), var(--color-bg-primary) 75%);
   --color-border-media: rgba(255, 255, 255, .15);
   --color-text-brand: color-mix(in oklab, var(--color-accent), white 30%);
